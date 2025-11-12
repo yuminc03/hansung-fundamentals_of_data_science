@@ -5,12 +5,12 @@
 int main(void)
 {
 	srand(time(NULL));
-	int count = 0;
+	int attemptCount = 0;
 
 	while (1)
 	{
-		count += 1;
-		printf("*%dÈ¸ °ÔÀÓ*\n", count);
+		attemptCount += 1;
+		printf("*%dÈ¸ °ÔÀÓ*\n", attemptCount);
 		int num1 = (rand() % 7) + 1;
 		int num2 = (rand() % 7) + 1;
 		int num3 = (rand() % 7) + 1;
@@ -21,7 +21,7 @@ int main(void)
 		if (num1 == 7 && num2 == 7 && num3 == 7)
 		{
 			printf("ÀèÆÌ ¼º°ø!\n");
-			printf("½Ãµµ È½¼ö: %d\n", count);
+			printf("½Ãµµ È½¼ö: %d\n", attemptCount);
 			break;
 		}
 		else {
