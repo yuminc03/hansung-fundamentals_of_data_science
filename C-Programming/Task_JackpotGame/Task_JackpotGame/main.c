@@ -11,15 +11,14 @@ int main(void)
 	{
 		count += 1;
 		printf("*%dÈ¸ °ÔÀÓ*\n", count);
-		// rand() % °³¼ö
-		int a = (rand() % 7) + 1;
-		int b = (rand() % 7) + 1;
-		int c = (rand() % 7) + 1;
-		printf("a: %d\n", a);
-		printf("b: %d\n", b);
-		printf("c: %d\n", c);
+		int num1 = (rand() % 7) + 1;
+		int num2 = (rand() % 7) + 1;
+		int num3 = (rand() % 7) + 1;
+		printf("a: %d\n", num1);
+		printf("b: %d\n", num2);
+		printf("c: %d\n", num3);
 
-		if (a == 7 && b == 7 && c == 7)
+		if (num1 == 7 && num2 == 7 && num3 == 7)
 		{
 			printf("ÀèÆÌ ¼º°ø!\n");
 			printf("½Ãµµ È½¼ö: %d\n", count);
