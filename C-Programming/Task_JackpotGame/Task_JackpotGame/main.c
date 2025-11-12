@@ -17,19 +17,17 @@ int main(void)
 	while (jackpotWins == 0)
 	{
 		attemptCount += 1;
-		printf("*%d회 게임*\n", attemptCount);
+		printf("==============%d회 게임==============\n", attemptCount);
 		int num1 = (rand() % 7) + 1;
 		int num2 = (rand() % 7) + 1;
 		int num3 = (rand() % 7) + 1;
-		printf("a: %d\n", num1);
-		printf("b: %d\n", num2);
-		printf("c: %d\n", num3);
+		printf("===%d회 게임 결과: [%d] [%d] [%d]===\n", attemptCount, num1, num2, num3);
 
 		if (num1 == 7 && num2 == 7 && num3 == 7)
 		{
-			printf("잭팟 성공!\n");
-			printf("시도 횟수: %d\n", attemptCount);
-			break;
+			printf("<<-------%d-%d-%d 잭팟 성공!------->>\n", num1, num2, num3);
+			printf("<<------게임 시도 횟수: %d\n------->>", attemptCount);
+			jackpotWins += 1;
 		}
 		else {
 			printf("다음 기회에..\n");
