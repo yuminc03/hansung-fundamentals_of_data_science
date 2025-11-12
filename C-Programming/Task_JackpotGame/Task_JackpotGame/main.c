@@ -14,7 +14,7 @@ int main(void)
 	printf("잭팟 게임을 시작합니다! 7-7-7이 나오면 게임은 종료됩니다.");
 	printf("=========================================================");
 
-	while (1)
+	while (jackpotWins == 0)
 	{
 		attemptCount += 1;
 		printf("*%d회 게임*\n", attemptCount);
