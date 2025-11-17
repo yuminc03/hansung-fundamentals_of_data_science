@@ -25,9 +25,15 @@ int main(void)
 
 		if (num1 == 7 && num2 == 7 && num3 == 7)
 		{
+			// ¿Ë∆Ã (7-7-7)
 			printf("<<-------%d-%d-%d ¿Ë∆Ã º∫∞¯!------->>\n", num1, num2, num3);
 			printf("<<------∞‘¿” Ω√µµ »Ωºˆ: %d\n------->>", attemptCount);
 			jackpotWins += 1;
+		}
+		else if (num1 == num2 && num2 == num3) {
+			// ¿Ë∆Ã¿Ã æ∆¥— ∆Æ∏Æ«√ (3-3-3, 5-5-5 µÓ..)
+			printf("<<-------%d-%d-%d ∆Æ∏Æ«√!------->>\n", num1, num2, num3);
+			tripleWins += 1;
 		}
 		else {
 			printf("¥Ÿ¿Ω ±‚»∏ø°..\n");
